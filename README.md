@@ -2,5 +2,5 @@
 
 ## Installation
 
-1. Clone this repo
-1. Have fun
+- Clone this repo
+- Have fun
