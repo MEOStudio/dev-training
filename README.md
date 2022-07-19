@@ -2,6 +2,5 @@
 
 ## Installation
 
-Write something
-
-and then next line
+1. Clone this repo
+1. Have fun
