@@ -20,38 +20,54 @@
         </ul>
     </nav>
     <main>
-        <section>
-            <h1>Heading 1</h1>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolor commodi quos, labore eaque unde at
-                voluptate.
-                Minima tenetur, ipsa aut, reprehenderit delectus quae a earum iusto molestias fuga eligendi similique.
-            </p>
-        </section>
-        <article id="article-1">
-            <h1>Heading 2</h1>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod repudiandae illo distinctio nisi.
-                Accusantium
-                doloremque ea doloribus soluta eum, facilis consectetur saepe sapiente nobis illum totam magnam nulla
-                architecto numquam.</p>
-        </article>
+        <div class="card-list">
+            <section class="card">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque atque quasi voluptates
+                    reiciendis praesentium quaerat ex maxime non, dignissimos inventore possimus ea perspiciatis labore
+                    beatae obcaecati sequi quis repellendus.</p>
+            </section>
+            <section class="card">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque atque quasi voluptates
+                    reiciendis praesentium quaerat ex maxime non, dignissimos inventore possimus ea perspiciatis labore
+                    beatae obcaecati sequi quis repellendus.</p>
+            </section>
+            <section class="card">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque atque quasi voluptates
+                    reiciendis praesentium quaerat ex maxime non, dignissimos inventore possimus ea perspiciatis labore
+                    beatae obcaecati sequi quis repellendus.</p>
+            </section>
+            <section class="card">
+                <h1>Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae neque atque quasi voluptates
+                    reiciendis praesentium quaerat ex maxime non, dignissimos inventore possimus ea perspiciatis labore
+                    beatae obcaecati sequi quis repellendus.</p>
+            </section>
+        </div>
         <blockquote>This is a quote</blockquote>
-        <form action="">
+        <form class="contact-form" action="">
             <label for="username">Username</label>
             <input type="text" name="username" id="username">
             <label for="password">Password</label>
             <input type="password" name="password" id="password">
             <label for="comment">Comment</label>
             <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
-            <label for="like">Like</label>
-            <input type="checkbox" name="like" id="like" value="like">
-            <label for="love">Love</label>
-            <input type="checkbox" name="love" id="love" value="like">
-            <label for="hate">Hate</label>
-            <input type="checkbox" name="hate" id="hate" value="hate">
-            <label for="male">Male</label>
-            <input type="radio" name="sex" id="male" value="male">
-            <label for="female">Female</label>
-            <input type="radio" name="sex" id="female" value="female">
+            <div class="react-option">
+                <label for="like">Like</label>
+                <input type="checkbox" name="like" id="like" value="like">
+                <label for="love">Love</label>
+                <input type="checkbox" name="love" id="love" value="love">
+                <label for="hate">Hate</label>
+                <input type="checkbox" name="hate" id="hate" value="hate">
+            </div>
+            <div class="sex-option">
+                <label for="male">Male</label>
+                <input type="radio" name="sex" id="male" value="male">
+                <label for="female">Female</label>
+                <input type="radio" name="sex" id="female" value="female">
+            </div>
             <input type="submit" value="Submit">
         </form>
     </main>
