@@ -53,6 +53,8 @@ header {
 }
 nav {
   width: 100%;
+  transition: width 2s;
+  animation: reverse-color-change 1s ease-out forwards;
 }
 nav ul {
   width: 100%;
@@ -63,8 +65,9 @@ nav ul {
 }
 
 nav:hover {
-  background-color: white;
-  color: black;
+  width: 80%;
+  transition: width 2s;
+  animation: color-change 1s ease-out forwards;
 }
 
 nav:active {
@@ -128,5 +131,27 @@ p::after {
   .contact-form {
     background-color: aquamarine;
     color: black;
+  }
+}
+
+@keyframes color-change {
+  0% {
+    background-color: transparent;
+    color: white;
+  }
+  100% {
+    background-color: white;
+    color: black;
+  }
+}
+
+@keyframes reverse-color-change {
+  0% {
+    background-color: white;
+    color: black;
+  }
+  100% {
+    background-color: transparent;
+    color: white;
   }
 }
