@@ -1,0 +1,21 @@
+.navBar {
+  .linksContainer {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    background-color: white;
+    color: black;
+    font-weight: normal;
+    transition: font-weight 100ms ease-in-out;
+    & > * {
+      &:hover {
+        font-weight: bold;
+        transition: font-weight 100ms ease-in-out;
+      }
+    }
+  }
+}
