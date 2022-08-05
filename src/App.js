@@ -20,7 +20,7 @@ function App() {
           Study React
         </a>
       </header>
-      <main class="App-body">
+      <main className="App-body">
         {data.map((element) => {
           return (
             <Card title={element.title} content={element.content}>

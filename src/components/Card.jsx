@@ -2,7 +2,7 @@ import React from "react";
 import cardStyles from "../styles/Card.module.scss";
 import ReactionButton from "./ReactionButton";
 import { useState, useEffect } from "react";
-import logo from "../logo.svg";
+
 import {
   faThumbsUp,
   faThumbsDown,
@@ -18,7 +18,14 @@ const Card = (props) => {
       );
       return response;
     };
-    unsplashRandom().then((data) => console.log(data));
+    unsplashRandom()
+      .then((data) => {
+        return data.json();
+      })
+      .then((result) => {
+        console.log(result.urls.small);
+        setImgUrl(result.urls.small);
+      });
   }, []);
   return (
     <div className={cardStyles.card}>
@@ -30,7 +37,7 @@ const Card = (props) => {
         saepe repudiandae iste illum officia!
       </p>
       {props.children}
-      <img src={logo} alt="Icon"></img>
+      <img src={imgUrl} alt="Icon" width="100%"></img>
       {likes}
       <ReactionButton
         icon={faThumbsUp}
