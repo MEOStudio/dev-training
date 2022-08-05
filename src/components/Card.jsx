@@ -14,7 +14,14 @@ const Card = (props) => {
   useEffect(() => {
     const unsplashRandom = async () => {
       const response = await fetch(
-        "https://api.unsplash.com/photos/random/?client_id=4hi7fgNG_TmAkLHRrx1b29uPSzSkvrPuwaVi60zr72E"
+        "https://api.unsplash.com/photos/random/",
+        {
+          headers: {
+            Authorization:
+              "Client-ID " +
+              "4hi7fgNG_TmAkLHRrx1b29uPSzSkvrPuwaVi60zr72E",
+          },
+        }
       );
       return response;
     };
